@@ -1,0 +1,3 @@
+F:/Project Noma/Wave-Crash/out/build/x64-debug/CMakeFiles/Wave-Crash.dir
+F:/Project Noma/Wave-Crash/out/build/x64-debug/CMakeFiles/edit_cache.dir
+F:/Project Noma/Wave-Crash/out/build/x64-debug/CMakeFiles/rebuild_cache.dir
