@@ -7,23 +7,35 @@
 class Card
 {
 private:
+
+    enum class CardType
+    {
+        PUSH_WAVE = 0,
+        PULL_WAVE = 1,
+        MOVE_TOKEN = 2
+    };
+
+    enum class TargetSide
+    {
+        RED = 1,
+        BLUE = 2
+    };
+
     int xCoordinate;
     int yCoordinate;
     int width;
     int height;
     std::string text;
     int magnitude;
+    CardType type;
+    TargetSide targetSide;
 
-    enum class CardType
-    {
-        PUSH_WAVE,
-        PULL_WAVE,
-        MOVE_TOKEN
-    };
+
 
 public:
-    Card(int xCoordinate, int yCoordinate, int width, int height, int magnitude, Card::CardType type);
-    ~Card();
+
+    Card();
+    Card(int xCoordinate, int yCoordinate, int width, int height, int magnitude, Card::CardType type, std::string text, Card::TargetSide targetSide);
 
     //Gameplay Accessors
     CardType GetType();
@@ -40,7 +52,7 @@ public:
     void SetYCoordinate(int y);
     void SetWidth(int width);
     void SetHeight(int height);
-    void SetText(std::string text);
+    void SetEffect(int typeValue, int directionValue, std::string text, int magnitude = 1);
 
     void draw(Graphics& object);
 };

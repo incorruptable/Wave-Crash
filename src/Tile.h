@@ -20,7 +20,6 @@ private:
 
 public:
     Tile(int xCoordinate, int yCoordinate, int width, int height);
-    ~Tile();
 
     //Getters
     int GetXCoordinate();
