@@ -57,7 +57,7 @@ void Deck::GenerateCards()
     cards.emplace_back(card);
 }
 
-std::vector<Card> GenerateDeck(std::vector<Card>& cardVector)
+std::vector<Card> Deck::GenerateDeck(std::vector<Card>& cardVector)
 {
     std::vector<Card> tempVector;
     for(int copy = 0; copy < 5; copy++)

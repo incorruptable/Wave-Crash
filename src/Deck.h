@@ -1,6 +1,8 @@
 #pragma once
 
 #include "Card.h"
+#include "Player.h"
+
 #include <vector>
 #include <random>
 #include <algorithm>
@@ -15,7 +17,7 @@ public:
 
     void Shuffle(std::vector<Card>& deck);
     Card DrawCard();
-    bool isEmpty() const;
+    bool isEmpty();
 
     void GenerateCards();
     std::vector<Card> GenerateDeck(std::vector<Card>& cardVector);
