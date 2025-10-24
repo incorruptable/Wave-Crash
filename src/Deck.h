@@ -11,6 +11,7 @@ class Deck
 {
 private:
     std::vector<Card> cards;
+    std::vector<Card> deck;
     int nextCardIndex;
 public:
     Deck(int size, std::vector<Card> cards);
@@ -19,6 +20,6 @@ public:
     Card DrawCard();
     bool isEmpty();
 
-    void GenerateCards();
-    std::vector<Card> GenerateDeck(std::vector<Card>& cardVector);
+    void GenerateCards(); //Gets called exactly once at the start of the game.
+    std::vector<Card> GenerateDeck();
 };

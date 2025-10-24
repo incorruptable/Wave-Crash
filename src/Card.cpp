@@ -82,6 +82,11 @@ void Card::SetEffect(int typeValue, int directionValue, std::string inText, int 
     magnitude = inMagnitude;
 }
 
+bool operator==(const Card& left, const Card& right)
+{
+    return left.magnitude == right.magnitude && left.type == right.type && left.targetSide == right.targetSide;
+}
+
 void Card::draw(Graphics& object)
 {
     int x = xCoordinate - (width/2);

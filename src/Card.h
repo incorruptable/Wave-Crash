@@ -54,5 +54,7 @@ public:
     void SetHeight(int height);
     void SetEffect(int typeValue, int directionValue, std::string text, int magnitude = 1);
 
+    friend bool operator==(const Card& left, const Card& right);
+
     void draw(Graphics& object);
 };

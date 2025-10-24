@@ -57,16 +57,36 @@ void Deck::GenerateCards()
     cards.emplace_back(card);
 }
 
-std::vector<Card> Deck::GenerateDeck(std::vector<Card>& cardVector)
+std::vector<Card> Deck::GenerateDeck()
 {
     std::vector<Card> tempVector;
     for(int copy = 0; copy < 5; copy++)
     {
-        for (const auto& baseCard : cardVector)
+        for (const auto& baseCard : cards)
         {
             tempVector.push_back(baseCard);
         }
     }
 
     return tempVector;
+}
+
+Card Deck::DrawCard()
+{
+    if(deck.empty())
+    {
+        deck = GenerateDeck();
+        Shuffle(deck);
+    }
+
+    Card card = deck[0];
+    deck.erase(deck.begin());
+
+    if(deck.empty())
+    {
+        deck = GenerateDeck();
+        Shuffle(deck);
+    }
+
+    return card;
 }
