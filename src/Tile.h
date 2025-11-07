@@ -7,10 +7,6 @@
 class Tile
 {
 private:
-    int xCoordinate;
-    int yCoordinate;
-    int width;
-    int height;
 
     enum class TileType
     {
@@ -18,8 +14,14 @@ private:
         WAVE
     };
 
+    int mXCoordinate;
+    int mYCoordinate;
+    int mWidth;
+    int mHeight;
+    TileType mTileType;
+
 public:
-    Tile(int xCoordinate, int yCoordinate, int width, int height);
+    Tile(int xCoordinate, int yCoordinate, int width, int height, TileType tileType);
 
     //Getters
     int GetXCoordinate();
