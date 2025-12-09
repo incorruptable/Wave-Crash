@@ -6,8 +6,7 @@
 
 class Card
 {
-private:
-
+public:
     enum class CardType
     {
         PUSH_WAVE = 0,
@@ -20,7 +19,7 @@ private:
         RED = 1,
         BLUE = 2
     };
-
+private:
     int xCoordinate;
     int yCoordinate;
     int width;
@@ -38,14 +37,15 @@ public:
     Card(int xCoordinate, int yCoordinate, int width, int height, int magnitude, Card::CardType type, std::string text, Card::TargetSide targetSide);
 
     //Gameplay Accessors
-    CardType GetType();
-    int GetMagnitude();
+    CardType GetType() const;
+    int GetMagnitude() const;
+    TargetSide GetSide() const;
 
     //Getters
-    int GetXCoordinate();
-    int GetYCoordinate();
-    int GetWidth();
-    int GetHeight();
+    int GetXCoordinate() const;
+    int GetYCoordinate() const;
+    int GetWidth() const;
+    int GetHeight() const;
 
     //Setters
     void SetXCoordinate(int x);

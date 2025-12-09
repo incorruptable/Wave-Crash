@@ -6,13 +6,14 @@
 
 class Tile
 {
-private:
-
+public:
     enum class TileType
     {
         MOVEMENT_TILE,
-        WAVE
+        RED_WAVE,
+        BLUE_WAVE
     };
+private:
 
     int mXCoordinate;
     int mYCoordinate;
@@ -21,19 +22,31 @@ private:
     TileType mTileType;
 
 public:
+    //Constructors
+
+    /*
+    Purpose: Takes in JUST the tileType to adjust as needed.
+    */
+    Tile(TileType tileType);
+    /*
+    Purpose: Adjusts the size where 
+    */
+    Tile(int xCoordinate, int yCoordinate, int width, int height);
     Tile(int xCoordinate, int yCoordinate, int width, int height, TileType tileType);
 
     //Getters
-    int GetXCoordinate();
-    int GetYCoordinate();
-    int GetWidth();
-    int GetHeight();
+    int GetXCoordinate() const;
+    int GetYCoordinate() const;
+    int GetWidth() const;
+    int GetHeight() const;
+    TileType GetType() const;
 
     //Setters
     void SetXCoordinate(int x);
     void SetYCoordinate(int y);
     void SetWidth(int width);
     void SetHeight(int height);
+    void SetType(TileType tileType);
 
     void draw(Graphics& object);
 };

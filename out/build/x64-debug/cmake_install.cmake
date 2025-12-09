@@ -1,8 +1,8 @@
-# Install script for directory: F:/Project Noma/Wave-Crash
+# Install script for directory: F:/Github-Repos/Wave-Crash
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "F:/Project Noma/Wave-Crash/out/install/x64-debug")
+  set(CMAKE_INSTALL_PREFIX "F:/Github-Repos/Wave-Crash/out/install/x64-debug")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -35,7 +35,7 @@ endif()
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "F:/Project Noma/Wave-Crash/out/build/x64-debug/install_local_manifest.txt"
+  file(WRITE "F:/Github-Repos/Wave-Crash/out/build/x64-debug/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()
 if(CMAKE_INSTALL_COMPONENT)
@@ -51,6 +51,6 @@ else()
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "F:/Project Noma/Wave-Crash/out/build/x64-debug/${CMAKE_INSTALL_MANIFEST}"
+  file(WRITE "F:/Github-Repos/Wave-Crash/out/build/x64-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

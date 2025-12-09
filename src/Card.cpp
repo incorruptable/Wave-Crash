@@ -24,32 +24,37 @@ Card::Card(int inXCoordinate, int inYCoordinate, int inWidth, int inHeight, int 
     targetSide = inTargetSide;
 }
 
-Card::CardType Card::GetType()
+Card::CardType Card::GetType() const
 {
     return type;
 }
 
-int Card::GetMagnitude()
+int Card::GetMagnitude() const
 {
     return magnitude;
 }
 
-int Card::GetXCoordinate()
+Card::TargetSide Card::GetSide() const
+{
+    return targetSide;
+}
+
+int Card::GetXCoordinate() const
 {
     return xCoordinate;
 }
 
-int Card::GetYCoordinate()
+int Card::GetYCoordinate() const
 {
     return yCoordinate;
 }
 
-int Card::GetWidth()
+int Card::GetWidth() const
 {
     return width;
 }
 
-int Card::GetHeight()
+int Card::GetHeight() const
 {
     return height;
 }

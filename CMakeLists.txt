@@ -12,7 +12,7 @@ endif()
 project ("Wave-Crash")
 
 # Add source to this project's executable.
-add_executable (Wave-Crash "Wave-Crash.cpp" "Wave-Crash.h")
+add_executable (Wave-Crash "src/Wave-Crash.cpp" "src/Wave-Crash.h" "src/WaveCrashAI.cpp" "src/WaveCrashAI.h" "src/wcgamedata.h" "src/Card.cpp" "src/Card.h" "src/Deck.cpp" "src/Deck.h" "src/Player.cpp" "src/Player.h" "src/Tile.cpp" "src/Tile.h" "src/Token.cpp" "src/Token.h" "src/Board.hpp")
 
 if (CMAKE_VERSION VERSION_GREATER 3.12)
   set_property(TARGET Wave-Crash PROPERTY CXX_STANDARD 20)
