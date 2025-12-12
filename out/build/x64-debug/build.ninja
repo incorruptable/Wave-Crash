@@ -105,6 +105,14 @@ build CMakeFiles\Wave-Crash.dir\src\Token.cpp.obj: CXX_COMPILER__Wave-Crash_unsc
   TARGET_COMPILE_PDB = CMakeFiles\Wave-Crash.dir\
   TARGET_PDB = Wave-Crash.pdb
 
+build CMakeFiles\Wave-Crash.dir\src\graphics\Graphics.cpp.obj: CXX_COMPILER__Wave-Crash_unscanned_Debug F$:\Github-Repos\Wave-Crash\src\graphics\Graphics.cpp || cmake_object_order_depends_target_Wave-Crash
+  CONFIG = Debug
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -std:c++20 -ZI
+  OBJECT_DIR = CMakeFiles\Wave-Crash.dir
+  OBJECT_FILE_DIR = CMakeFiles\Wave-Crash.dir\src\graphics
+  TARGET_COMPILE_PDB = CMakeFiles\Wave-Crash.dir\
+  TARGET_PDB = Wave-Crash.pdb
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Wave-Crash
@@ -113,7 +121,7 @@ build CMakeFiles\Wave-Crash.dir\src\Token.cpp.obj: CXX_COMPILER__Wave-Crash_unsc
 #############################################
 # Link the executable Wave-Crash.exe
 
-build Wave-Crash.exe: CXX_EXECUTABLE_LINKER__Wave-Crash_Debug CMakeFiles\Wave-Crash.dir\src\Wave-Crash.cpp.obj CMakeFiles\Wave-Crash.dir\src\WaveCrashAI.cpp.obj CMakeFiles\Wave-Crash.dir\src\Card.cpp.obj CMakeFiles\Wave-Crash.dir\src\Deck.cpp.obj CMakeFiles\Wave-Crash.dir\src\Player.cpp.obj CMakeFiles\Wave-Crash.dir\src\Tile.cpp.obj CMakeFiles\Wave-Crash.dir\src\Token.cpp.obj
+build Wave-Crash.exe: CXX_EXECUTABLE_LINKER__Wave-Crash_Debug CMakeFiles\Wave-Crash.dir\src\Wave-Crash.cpp.obj CMakeFiles\Wave-Crash.dir\src\WaveCrashAI.cpp.obj CMakeFiles\Wave-Crash.dir\src\Card.cpp.obj CMakeFiles\Wave-Crash.dir\src\Deck.cpp.obj CMakeFiles\Wave-Crash.dir\src\Player.cpp.obj CMakeFiles\Wave-Crash.dir\src\Tile.cpp.obj CMakeFiles\Wave-Crash.dir\src\Token.cpp.obj CMakeFiles\Wave-Crash.dir\src\graphics\Graphics.cpp.obj
   CONFIG = Debug
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -ZI
   LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console

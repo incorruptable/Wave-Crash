@@ -8,6 +8,9 @@ class Graphics
 private:
     double width;
     double height;
+
+    bool terminateOnClose = false;
+    std::string currentColor = "#000000";
 public:
     //Create window of dimensions
     Graphics(double width, double height);
